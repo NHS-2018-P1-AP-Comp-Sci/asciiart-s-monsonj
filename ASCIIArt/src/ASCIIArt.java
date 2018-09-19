@@ -15,7 +15,68 @@
  */
 
 public class ASCIIArt {
+	
+	/* This ASCII Art is meant to depict a patterned sock. */
 	public static void main (String [] args) {
-		System.out.println("THIS IS MY ASCII ART!!!!");
+		basePattern();
+		basePattern();
+		zigzag();
+		dotPattern();
+		basePattern();
+		horizontalStripe();
+		basePattern();
+		horizontalStripe();
+		basePattern();
+		zigzag();
+		basePattern();
+		dotPattern();
+		basePattern();
+		horizontalStripe();
+		basePattern();               
+		
+		/* 
+		 * I added most of this bottom section line by line because it
+		 * doesn't have enough repetition to warrant the use of methods.
+		 */
+		System.out.println("|||||||||||||||||||||||||");                
+		System.out.println("||||||||||||||||||||||||||");      
+		System.out.println("|||||||||||||||||||||||||||||||"); 
+		System.out.println("|||||||||||||||||||||||||||||||||||||");
+		System.out.println("||||||||||||||||||||||||||||||||||||||||||||||");
+		System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+		System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+		System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");    
+		sockToe();
+		sockToe();
+		sockToe();
+		sockToe();
+		sockToe();
+		System.out.println(" |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+		System.out.println("  |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+
+	}
+	
+	public static void basePattern() {
+		System.out.println("|||||||||||||||||||||||");
+	}
+	
+	public static void zigzag() {
+		System.out.println("\\||||/\\||||/\\||||/\\||||");
+		System.out.println("|\\||/||\\||/||\\||/||\\||/");
+		System.out.println("||\\/||||\\/||||\\/||||\\/|");
+	}
+	
+	public static void horizontalStripe() {
+		System.out.println("-----------------------");
+	}
+	
+	public static void dotPattern() {
+		System.out.println("|\"|\"|\"|\"|\"|\"|\"|\"|\"|\"|\"|");
+		System.out.println("||'|'|'|'|'|'|'|'|'|'||");
+		System.out.println("|\"|\"|\"|\"|\"|\"|\"|\"|\"|\"|\"|");
+	}
+	
+	public static void sockToe() {
+		System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
 	}
 }
